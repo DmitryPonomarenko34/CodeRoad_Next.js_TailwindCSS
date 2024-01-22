@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Introduction to Front-End Development",
+    "id": "1",
+    "content": [
+      {
+        "title": "Introduction to Web Development",
+        "text": "Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!"
+      },
+      {
+        "title": "HTML Fundamentals",
+        "text": "Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!"
+      },
+      {
+        "title": "CSS Fundamentals",
+        "text": "Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!"
+      },
+      {
+        "title": "JavaScript Fundamentals",
+        "text": "Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!"
+      },
+      {
+        "title": "Responsive Web Design and Accessibility",
+        "text": "Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!"
+      }
+    ]
+  },
+  {
+    "title": "Advanced Front-End Development",
+    "id": "2",
+    "content": [
+      {
+        "title": "Introduction to React",
+        "text": "Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!"
+      },
+      {
+        "title": "React Router",
+        "text": "Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!"
+      },
+      {
+        "title": "Advanced React",
+        "text": "Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!"
+      },
+      {
+        "title": "Redux",
+        "text": "Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!"
+      },
+      {
+        "title": "React Testing",
+        "text": "Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!"
+      }
+    ]
+  }
+]

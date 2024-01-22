@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  .decor-code {
+    @apply drop-shadow flex items-center justify-center;
+  }
+
+  .form-bg {
+    background-image: url('../public/icons/imagery.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .line-item-decor {
+    position: relative;
+  }
+
+  .line-item-decor::after {
+    content: '';
+    position: absolute;
+    display: none;
+    width: 255px;
+    height: 70px;
+    left: 64%;
+    top: 0;
+    transform: rotate(160deg);
+    background-image: url('../public/icons/dotted-vector.svg');
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (min-width: 640px) {
+    .line-item-decor::after {
+      display: block;
+    }
+
+    .line-item-decor:nth-child(2n)::after {
+      display: none;
+    }
+
+    .line-item-decor:last-child::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .line-item-decor::after {
+      left: 80%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .line-item-decor::after {
+      left: 64%;
+    }
+
+    .line-item-decor:nth-child(2n)::after {
+      display: block;
+    }
+
+    .line-item-decor:last-child::after {
+      display: none;
+    }
+
+    .line-item-decor:nth-child(3n)::after {
+      display: none;
+    }
+  }
+
+  .dotted-decor-left,
+  .dotted-decor-right,
+  .dotted-decor-bottom {
+    position: relative;
+  }
+
+  .dotted-decor-left::before,
+  .dotted-decor-right::before{
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 66%;
+    background-image: url('../public/icons/dotted-vector-second.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1;
+    width: 200px;
+    height: 160px;
+    display: none;
+  
+    @apply lg:block sm:w-[200px] sm:h-[160px] md:w-[180px] md:h-[120px] lg:w-[300px] lg:h-[250px] xl:w-[400px] xl:h-[350px] 2xl:w-[500px] 2xl:h-[450px];
+  }
+
+  .dotted-decor-right::before {
+    background-image: url('../public/icons/dotted-vector-second-left.svg');
+    right: 70%;
+    left: auto;
+    top: 90%;
+    display: none;
+
+    @apply lg:block sm:w-[200px] sm:top-[120%] sm:h-[160px] md:top-full md:w-[180px] md:h-[120px] lg:w-[250px] lg:h-[200px] xl:w-[350px] xl:h-[300px] 2xl:w-[450px] 2xl:h-[400px] 2xl:top-[90%];
+  }
+
+  .custom-ic {
+    position: relative;
+    padding-left: 32px;
+  }
+
+  .custom-ic::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('../public/icons/check.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @apply mb-4 last:mb-0 text-[#0B132A];
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply block text-[#535763] w-full p-3 rounded-lg lg:py-0 lg:text-black/90 lg:font-medium lg:hover:text-secondary 
+    lg:p-0;
+  }
+
+  .active-link {
+    @apply bg-primary text-white font-bold lg:text-secondary pointer-events-none lg:bg-transparent lg:font-medium;
+  }
+
+  .menu {
+    @apply absolute top-0 -translate-y-[200%] left-0 w-full bg-background transition-transform lg:translate-y-0 lg:relative lg:flex lg:items-center z-10;
+  }
+
+  .menu-item {
+    @apply mb-2 last:mb-0 lg:mb-0 lg:mr-2 xl:mr-6 lg:last:mr-0;
+  }
+
+  .custom-container {
+    max-width: 1164px;
+    @apply mx-auto px-2;
+  }
+
+  .title {
+    @apply text-lg text-black mb-4 text-center lg:text-4xl lg:mb-6 font-medium;
+  }
+
+  .bg-gradient-custom {
+    background: linear-gradient(180deg, rgba(55, 119, 113, 0.1) 0%, rgba(55, 119, 113, 0) 100%);
+  }
+
+  .wrap-gradient {
+    background: linear-gradient(0, rgba(55, 119, 113, 0.6) 0%, rgba(55, 119, 113, 0.240625) 20.83%, rgba(55, 119, 113, 0) 82.81%);
+  }
+
+  .wrap-gradient-footer {
+    background: linear-gradient(180deg, rgba(55, 119, 113, 0.6) 0%, rgba(55, 119, 113, 0.240625) 20.83%, rgba(55, 119, 113, 0) 82.81%);
+  }
+
+
+  .btn-shadow {
+    box-shadow: inset 2.67379px 2.67379px 5.34757px #170F49, inset -2.67379px -2.67379px 5.34757px 0.891262px #6366B9;
+  }
+}
